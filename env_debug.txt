@@ -1,0 +1,9 @@
+Array
+(
+    [SMTP_HOST] => smtp.gmail.com
+    [SMTP_USERNAME] => johnhennj86@gmail.com
+    [SMTP_ADMIN_EMAIL] => johnhennj86@gmail.com
+    [SMTP_PASSWORD] => gdvwbcsiisxgibgg
+    [SMTP_SECURE] => starttls
+    [SMTP_PORT] => 587
+)
