@@ -1,0 +1,9 @@
+Array
+(
+    [name] => John
+    [surname] => Henn
+    [phone] => 0634682373
+    [email] => johnhennj86@gmail.com
+    [subject] => hiv
+    [message] => Hello
+)
