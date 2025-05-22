@@ -3,150 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Styathernba Wellness Center</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: #f8f9fa;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #2c3e50;
-            text-align: center;
-        }
-        .section {
-            margin: 40px 0;
-            padding: 20px;
-        }
-        .mission, .values {
-            background-color: #f8f9fa;
-            padding: 30px;
-            border-radius: 5px;
-        }
-        .team {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-            margin-top: 30px;
-        }
-        .team-member {
-            text-align: center;
-            width: 200px;
-        }
-        .cta {
-            background-color: #2c3e50;
-            color: white;
-            padding: 40px;
-            text-align: center;
-            border-radius: 5px;
-        }
-        .cta a {
-            color: white;
-            background-color: #3498db;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #f8f9fa;
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Banner -->
     <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
-        </nav>
+        <div class="banner">
+            <img src="images/URCSA3.4.jpg" alt="Siyathemba Wellness Logo" class="logo">
+            <h1>Siyathemba Wellness Center</h1>
+        </div>
     </header>
 
-    <div class="container">
-        <h1>About Us</h1>
-        
-        <div class="section">
-            <h2>Welcome to Styathernba Wellness Center</h2>
-        </div>
+    <!-- Slogan -->
+    <p class="slogan">Empowering Lives. Building a Better Future.</p>
 
-        <div class="section">
-            <h2>Who We Are</h2>
-            <p><strong>Empowering Communities Through Education & Change</strong></p>
-            <p>At Styathernba Wellness Center, we work to combat pressing community challenges such as alcohol and drug abuse, gender-based violence, and the spread of HIV/AIDS through education and awareness.</p>
-        </div>
-
-        <div class="section mission">
-            <h2>Our Mission</h2>
-            <p><strong>Transforming Lives Through Awareness & Education</strong></p>
-            <p>We aim to create holistic solutions through advocacy, outreach programs, and fostering positive behavioral change in communities affected by substance abuse, violence, and health crises.</p>
-        </div>
-
-        <div class="section values">
-            <h2>Our Core Values</h2>
-            <p><strong>Guiding Every Step We Take</strong></p>
-            <ul>
-                <li><strong>Compassion</strong> — Advocating for those in need.</li>
-                <li><strong>Integrity</strong> — Building trust through transparency.</li>
-                <li><strong>Innovation</strong> — Driving progress through creativity.</li>
-                <li><strong>Collaboration</strong> — Strengthening community partnerships.</li>
-                <li><strong>Education</strong> — Empowering individuals through knowledge.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Meet the Team</h2>
-            <p><strong>The Faces Behind Our Mission</strong></p>
-            <div class="team">
-                <div class="team-member">
-                    <h3>Edward</h3>
-                    <p>Founder & Visionary</p>
-                </div>
-                <div class="team-member">
-                    <h3>Jane Doe</h3>
-                    <p>Program Coordinator</p>
-                </div>
-                <div class="team-member">
-                    <h3>John Smith</h3>
-                    <p>Community Outreach Lead</p>
-                </div>
+    <!-- Vision, Mission, Values Section -->
+    <section class="info-section">
+        <div class="container info-container">
+            <div class="info-box">
+                <h2>Vision</h2>
+                <p>To create a society free from the devastating effects of alcohol and drug abuse, violence, and preventable health crises—where every individual is empowered to make informed life choices.</p>
+            </div>
+            <div class="info-box">
+                <h2>Mission</h2>
+                <p>To educate and uplift communities by addressing alcohol and drug abuse, domestic and gender-based violence, HIV/AIDS, and teenage pregnancies through awareness, support, and action.</p>
+            </div>
+            <div class="info-box">
+                <h2>Values</h2>
+                <p>Compassion. Integrity. Action. We stand for real change, providing education, support, and advocacy to break cycles and empower futures.</p>
             </div>
         </div>
+    </section>
 
-        <div class="section cta">
-            <h2>Join Our Journey</h2>
-            <p><strong>Be a Part of the Change</strong></p>
-            <a href="#">Get Involved</a>
+    <!-- Staff Members Section -->
+    <section class="staff">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="staff-images">
+                <div class="image-box"><img src="images/Edward.jpg" alt="Staff Member 1"></div>
+                <div class="image-box"><img src="staff2.jpg" alt="Staff Member 2"></div>
+                <div class="image-box"><img src="staff3.jpg" alt="Staff Member 3"></div>
+            </div>
         </div>
-    </div>
+    </section>
 
+    <!-- Address & Map Section -->
+    <section class="location">
+        <div class="container location-container">
+            <div class="address-box">
+                <h2>Our Location</h2>
+                <p><strong>Address:</strong><br>
+                Corner of Paddavreter & Vink Streets,<br>
+                Siyathemba, Kathu, 8446, South Africa</p>
+            </div>
+            <div class="map-box">
+    <h2>Find Us Here</h2>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3431.636781130436!2d23.068986105115716!3d-27.711380936836587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1747850534021!5m2!1sen!2sza" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Styathernba Wellness Center. All rights reserved.</p>
+        <p>© 2025 Siyathemba Wellness Center | All rights reserved</p>
+        <p>Cnr. Vink & Paddavreter Streets, Siyathemba, Kathu | Phone: (063) 468-237</p>
     </footer>
+
 </body>
 </html>

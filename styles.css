@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #410606;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner */
+header {
+    background-color: #2a7bbf;
+    padding: 20px; /* Reduced height */
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Slightly reduced */
+    min-height: 80px; /* Keeps a balanced height */
+    position: relative;
+}
+
+.logo {
+    width: 200px;
+    position: absolute;
+    left: 60px; /* Moves the logo more to the right */
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Slogan */
+.slogan {
+    font-size: 28px; /* Bigger for visibility */
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Vision, Mission, Values */
+.info-section {
+    background-color: #eef5ff;
+    padding: 40px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-box {
+    width: 30%;
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2a7bbf;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Staff Section */
+.staff {
+    padding: 40px;
+}
+
+.staff-images {
+    display: flex;
+    justify-content: center; /* Centers all image containers */
+    gap: 20px; /* Adds space between images */
+}
+
+.image-box {
+    width: 30%;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Location Section */
+.location-container {
+    display: flex;
+    justify-content: center; /* Ensures both sections are centered */
+    gap: 20px;
+}
+
+.address-box, .map-box {
+    width: 45%;
+    text-align: center; /* Centers text inside each box */
+    background-color: cornsilk;
+}
+.map-box {
+    width: 100%; /* Make the container fill the entire available space */
+    height: 500px; /* Adjust height to make it more visible */
+}
+
+.map-box iframe {
+    width: 100%; /* Ensures the map fills the container’s width */
+    height: 100%; /* Ensures the map fills the container’s height */
+    border: none; /* Removes default borders */
+}
+
+/* Footer */
+footer {
+    background-color: #2a7bbf;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 50px; /* Adds extra space above the footer */
+}
