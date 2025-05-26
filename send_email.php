@@ -30,6 +30,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             throw new Exception("❌ CAPTCHA verification failed!", $responseData->{"error-codes"} ?? []);
         }
 
+        echo getenv('RECAPTCHA_SITE_KEY'); // Should output your site key
+        echo getenv('RECAPTCHA_SECRET_KEY'); // Should output your secret key
+
+
+
         // ✅ Sanitize inputs
         $name = htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');
         $surname = htmlspecialchars($_POST['surname'], ENT_QUOTES, 'UTF-8');
