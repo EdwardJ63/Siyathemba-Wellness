@@ -4,10 +4,10 @@
     "vlucas/phpdotenv": "^5.5",
     "guzzlehttp/guzzle": "^7.7",
     "monolog/monolog": "^2.9",
-<<<<<<< HEAD
-    "symfony/polyfill-php80": "*"
-=======
-    "ralouphie/getallheaders": "*"
->>>>>>> 6ea272e (Update Siyathemba-Wellness)
+    "symfony/polyfill-php80": "^1.32",
+    "guzzlehttp/psr7": "^2.7",
+    "ralouphie/getallheaders": "^3.0",
+    "symfony/polyfill-ctype": "^1.32",
+    "symfony/polyfill-mbstring": "^1.32"
   }
 }

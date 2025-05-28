@@ -10,36 +10,10 @@ use Dotenv\Dotenv;
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     try {
-        // ✅ Initialize environment FIRST
+        // ✅ Initialize environment variables
         $dotenv = Dotenv::createImmutable(__DIR__);
         $dotenv->safeLoad();
 
-        // 🚀 Get CAPTCHA response
-        $captcha = $_POST['g-recaptcha-response'] ?? '';
-
-        if (!$captcha) {
-            throw new Exception("❌ Please verify you're human!");
-        }
-
-        // 🚀 Verify CAPTCHA with Google
-        $secretKey = $_ENV['RECAPTCHA_SECRET_KEY'] ?? '';
-        $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$captcha}");
-        $responseData = json_decode($response);
-
-<<<<<<< HEAD
-        if (!$responseData->success) {
-            throw new Exception("❌ CAPTCHA verification failed!", $responseData->{"error-codes"} ?? []);
-        }
-
-        echo getenv('RECAPTCHA_SITE_KEY'); // Should output your site key
-        echo getenv('RECAPTCHA_SECRET_KEY'); // Should output your secret key
-
-
-
-=======
-        $errorMessage = isset($responseData->{"error-codes"}) ? implode(', ', $responseData->{"error-codes"}) : "Unknown Error";
-        throw new Exception("❌ CAPTCHA verification failed! Errors: " . $errorMessage);
->>>>>>> 6ea272e (Update Siyathemba-Wellness)
         // ✅ Sanitize inputs
         $name = htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');
         $surname = htmlspecialchars($_POST['surname'], ENT_QUOTES, 'UTF-8');

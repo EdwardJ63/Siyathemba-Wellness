@@ -3,11 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-<<<<<<< HEAD
-        'reference' => 'ac6a8bbd84e7ebab22af2da82a70fee24f1876ea',
-=======
-        'reference' => '50f6375c03827e3610a78bd2afa9f4af164473d5',
->>>>>>> 6ea272e (Update Siyathemba-Wellness)
+        'reference' => '1d078a91f8b04e48622d7ff2ff2deb526795496c',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -17,11 +13,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-<<<<<<< HEAD
-            'reference' => 'ac6a8bbd84e7ebab22af2da82a70fee24f1876ea',
-=======
-            'reference' => '50f6375c03827e3610a78bd2afa9f4af164473d5',
->>>>>>> 6ea272e (Update Siyathemba-Wellness)
+            'reference' => '1d078a91f8b04e48622d7ff2ff2deb526795496c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -160,9 +152,9 @@
             'dev_requirement' => false,
         ),
         'symfony/deprecation-contracts' => array(
-            'pretty_version' => 'v3.5.1',
-            'version' => '3.5.1.0',
-            'reference' => '74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6',
+            'pretty_version' => 'v3.6.0',
+            'version' => '3.6.0.0',
+            'reference' => '63afe740e99a13ba87ec199bb07bbdee937a5b62',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/deprecation-contracts',
             'aliases' => array(),
