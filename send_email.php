@@ -26,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$captcha}");
         $responseData = json_decode($response);
 
+<<<<<<< HEAD
         if (!$responseData->success) {
             throw new Exception("❌ CAPTCHA verification failed!", $responseData->{"error-codes"} ?? []);
         }
@@ -35,6 +36,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
 
+=======
+        $errorMessage = isset($responseData->{"error-codes"}) ? implode(', ', $responseData->{"error-codes"}) : "Unknown Error";
+        throw new Exception("❌ CAPTCHA verification failed! Errors: " . $errorMessage);
+>>>>>>> 6ea272e (Update Siyathemba-Wellness)
         // ✅ Sanitize inputs
         $name = htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');
         $surname = htmlspecialchars($_POST['surname'], ENT_QUOTES, 'UTF-8');

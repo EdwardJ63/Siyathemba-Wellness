@@ -3,7 +3,11 @@
         'name' => '__root__',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
+<<<<<<< HEAD
         'reference' => 'ac6a8bbd84e7ebab22af2da82a70fee24f1876ea',
+=======
+        'reference' => '50f6375c03827e3610a78bd2afa9f4af164473d5',
+>>>>>>> 6ea272e (Update Siyathemba-Wellness)
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +17,11 @@
         '__root__' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
+<<<<<<< HEAD
             'reference' => 'ac6a8bbd84e7ebab22af2da82a70fee24f1876ea',
+=======
+            'reference' => '50f6375c03827e3610a78bd2afa9f4af164473d5',
+>>>>>>> 6ea272e (Update Siyathemba-Wellness)
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

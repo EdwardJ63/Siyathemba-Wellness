@@ -34,17 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const formData = new FormData(form);
 
-            // ✅ Capture reCAPTCHA response
-            const captchaResponse = document.querySelector('.g-recaptcha-response')?.value;
-            if (!captchaResponse) {
-                showPopup("error", "❌ Please verify you're human!");
-                submitBtn.disabled = false; // ✅ Re-enable button if CAPTCHA is missing
-                submitBtn.textContent = 'Send Message';
-                return;
-            }
-
-            formData.append("g-recaptcha-response", captchaResponse);
-
             console.log("🔥 Form Data Sent: ", Object.fromEntries(formData)); // ✅ Debugging check
 
             const response = await fetch(form.action, {
@@ -63,12 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (data.success) {
                 form.reset();
-
-                if (typeof grecaptcha !== "undefined") {
-                    grecaptcha.reset(); // ✅ Ensure CAPTCHA resets properly!
-                } else {
-                    console.warn("⚠️ reCAPTCHA object is undefined! Make sure the API is loaded.");
-                }
             } else {
                 showPopup("error", "Eish, something went wrong! 😅");
             }
