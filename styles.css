@@ -35,6 +35,27 @@ h1 {
     text-align: center;
     flex-grow: 1;
 }
+  nav {
+            background-color: #34495e;
+            padding: 0.8rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 12px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
 
 /* Slogan */
 .slogan {
