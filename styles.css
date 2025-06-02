@@ -24,8 +24,14 @@ header {
 
 .logo {
     width: 200px;
-    position: absolute;
-    left: 60px; /* Moves the logo more to the right */
+    position: relative;
+    left: 20px; /* Moves the logo more to the right */
+}
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 150px; /* Smaller for mobile */
+        left: 30px; /* Adjust position */
+    }
 }
 
 h1 {
@@ -137,7 +143,29 @@ p {
     height: 100%; /* Ensures the map fills the container’s height */
     border: none; /* Removes default borders */
 }
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
 
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 992px) { /* Styles for tablets */ }
+@media screen and (max-width: 768px) { /* Styles for phones */ }
+@media screen and (max-width: 480px) { /* Styles for smaller phones */ }
 /* Footer */
 footer {
     background-color: #2a7bbf;
