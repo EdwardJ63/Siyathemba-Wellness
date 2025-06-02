@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siyathemba Wellness Center</title>
- <head>
+    <style>
+        body {
+            min-height: 120vh; /* Extends the page height */
+        }
+    </style>
+</head>
+    
     <style>
         * {
             margin: 0;
@@ -61,7 +67,15 @@
         .header-spacer {
             width: 200px;
         }
-        
+        /* Slogan */
+        .slogan {
+           font-size: 28px; /* Bigger for visibility */
+           font-weight: bold;
+           color: #ff0000;
+           background-color: #f1c40f;
+           text-align: center;
+           margin-top: 10px;
+         }
         nav {
             background-color: #34495e;
             padding: 0.8rem 0;
@@ -167,27 +181,22 @@
         }
         
         .learn-more-container {
-            position: absolute;
-            bottom: 1.5rem;
-            left: 1.5rem;
-            right: 1.5rem;
-        }
-        
-        .learn-more {
-            display: block;
-            background-color: #e74c3c;
-            color: white;
-            padding: 0.8rem;
-            border-radius: 5px;
-            text-decoration: none;
-            text-align: center;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        
-        .learn-more:hover {
-            background-color: #c0392b;
-        }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Moves the buttons downward */
+}
+.learn-more {
+    padding: 8px 15px; /* Reduces button size */
+    font-size: 14px; /* Makes text slightly smaller */
+    background-color: #ff5733; /* Customize color if needed */
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.learn-more:hover {
+    background-color: #c70039; /* Slight hover effect */
+}
         
         .image-container {
             height: 400px;
@@ -207,7 +216,7 @@
         .image-container:hover img {
             transform: scale(1.05);
         }
-        
+
         /* Contact Form Styles */
         .contact-form {
             display: grid;
@@ -297,7 +306,7 @@
         }
     </style>
 </head>
-<body>
+</body>
     <header>
         <div class="logo-container">
             <img src="images\URCSA3.4.jpg" alt="Siyathemba Logo" class="logo">
@@ -305,16 +314,19 @@
         <div class="header-center">
             <h1>Siyathemba Wellness Center</h1>
         </div>
-        <div class="header-spacer"></div>
-        
-    </header>
+         <!-- Slogan -->
+    <div class="header-spacer"></div>
+   </header>
+   <!-- Slogan -->
+     <p class="slogan">Empowering Lives. Building a Better Future.</p>
+</body>
     
     <nav>
         <div class="container">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Donate</a></li>
             </ul>
@@ -339,8 +351,10 @@
                             </ul>
                         </div>
                         <div class="learn-more-container">
-                            <a href="#" class="learn-more">Learn More</a>
-                        </div>
+                            
+                            <a href="https://drive.google.com/file/d/1lx2RSZ-8y9Ad0TxUA4YcBrr2Xf0UqHF3/view" target="_blank" class="learn-more">HIV/Aids the Facts</a>
+                            <a href="https://forms.office.com/r/HcBMbBZQBd" target="_blank" class="learn-more">Do you know the facts?</a>
+                     </div>
                     </div>
                     <div class="image-container">
                         <img src="images\HIV Aids doesn’t discriminate_4.jpg" alt="HIV Awareness">
@@ -359,9 +373,9 @@
                                 <li>Rehab centers provide professional help.</li>
                             </ul>
                         </div>
-                        <div class="learn-more-container">
-                           <a href="assets/Teenage Substance Abuse.pptx" download>Learn More</a>
-                        </div>
+                          <div class="learn-more-container">
+                            <a href="assets/Alcohol and drug abuse1.mp4" target="_blank" class="learn-more">Learn More</a>
+                  </div>
                     </div>
                     <div class="image-container">
                         <img src="images\Drugs kill your future_2.jpg" alt="Drug Abuse Prevention">
