@@ -14,6 +14,26 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $dotenv = Dotenv::createImmutable(__DIR__);
         $dotenv->safeLoad();
 
+        // Now you can safely access environment variables, for example:
+        $recaptcha_secret = $_ENV['RECAPTCHA_SECRET']; // Make sure this is set in your .env file
+
+        // Get the reCAPTCHA response from the form
+        $recaptcha_response = $_POST["g-recaptcha-response"];
+
+        // Verify the reCAPTCHA response with Google's API
+        $verify_url = "https://www.google.com/recaptcha/api/siteverify?secret=" . $recaptcha_secret . "&response=" . $recaptcha_response;
+        $verify_response = file_get_contents($verify_url);
+        $response_data = json_decode($verify_response);
+
+        if ($response_data->success) {
+            // Proceed with email processing...
+        } else {
+            echo "Failed reCAPTCHA verification. Please try again.";
+        }
+
+
+
+
         // ✅ Sanitize inputs
         $name = htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');
         $surname = htmlspecialchars($_POST['surname'], ENT_QUOTES, 'UTF-8');

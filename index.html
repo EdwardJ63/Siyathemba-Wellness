@@ -71,10 +71,10 @@
         .slogan {
            font-size: 28px; /* Bigger for visibility */
            font-weight: bold;
-           color: #ff0000;
-           background-color: #f1c40f;
+           color: #f3e7e7;
+           background-color: #302702;
            text-align: center;
-           margin-top: 10px;
+          
          }
         nav {
             background-color: #34495e;
@@ -266,6 +266,33 @@
         .send-btn:hover {
             background-color: #219653;
         }
+        /* Base styling for the pop-up */
+        .popup {
+             display: none; /* Hidden by default */
+             position: fixed;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             background-color: #fff;
+             padding: 20px;
+             border: 2px solid #333;
+             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+             z-index: 1000;
+    }
+
+        /* A class to activate the pop-up */
+        .popup.active {
+             display: block;
+}
+
+        /* Style for the close button */
+         .popup .close {
+             cursor: pointer;
+             position: absolute;
+             top: 5px;
+             right: 10px;
+             font-size: 20px;
+}
         
         footer {
             background-color: #2c3e50;
@@ -319,6 +346,8 @@
    </header>
    <!-- Slogan -->
      <p class="slogan">Empowering Lives. Building a Better Future.</p>
+     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
 </body>
     
     <nav>
@@ -467,12 +496,11 @@
             <textarea id="message" name="message" rows="6" required></textarea>
         </div>
 
+ <div class="g-recaptcha" data-sitekey="6LdfpVMrAAAAAAN_U5-SwVm1ZgIRIv-LaBPyJZV6"></div>
 
-         <button type="submit" class="send-btn">Send Message</button>
+    <button type="submit" class="send-btn">Send Message</button>
 
-    
-  
-    </form>
+</form>
 </section>
 
 <div class="popup success-popup">
